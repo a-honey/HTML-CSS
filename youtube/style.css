@@ -31,6 +31,7 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
+  background-color: transparent;
 }
 
 /* Header */
@@ -54,4 +55,33 @@ header .logo > i {
 
 header .icons .fa-search {
   margin-right: var(--padding);
+}
+
+/* Player */
+.video iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.info .hashtags {
+  padding: calc(var(--padding) / 4) var(--padding);
+}
+
+.info .hash {
+  color: var(--blue-color);
+  font-size: var(--font-medium);
+  display: inline;
+  padding: calc(var(--padding) / 3);
+}
+
+.info .title-wrap {
+  padding: 0 calc(var(--padding) * 1.5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.info .subtitle {
+  padding: calc(var(--padding) / 4) calc(var(--padding) * 2);
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
 }
