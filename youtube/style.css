@@ -85,3 +85,52 @@ header .icons .fa-search {
   font-size: var(--font-small);
   color: var(--grey-dark-color);
 }
+
+.info .infoIcons {
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--padding) / 4) calc(var(--padding) * 3)
+    calc(var(--padding) / 2);
+  border-bottom: solid 1px --grey-light-color;
+}
+
+.info .infoIcons > button > .fas {
+  margin: calc(var(--padding) / 4) var(--padding);
+}
+.info .infoIcons > button > .clicked {
+  color: var(--blue-color);
+}
+
+.user {
+  height: 80px;
+  display: flex;
+  padding: var(--padding);
+  justify-content: space-between;
+}
+
+.user .user-wrapper {
+  display: flex;
+  align-items: center;
+}
+.user .user-wrapper > img {
+  height: 50px;
+  border-radius: 50%;
+}
+.user .user-wrapper > .userInfo {
+  padding: var(--padding);
+}
+
+.user .user-wrapper .userName {
+  font-size: var(--font-large);
+}
+
+.user .user-wrapper .userMoreInfo {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+}
+
+.user .subscribe > span {
+  border: solid 2px var(--grey-dark-color);
+  padding: calc(var(--padding) / 4) var(--padding);
+  border-radius: 5px;
+}
