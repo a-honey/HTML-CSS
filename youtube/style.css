@@ -186,3 +186,13 @@ header .icons .fa-search {
   color: var(--grey-dark-color);
   padding: calc(var(--padding) / 4);
 }
+
+@media (min-width: 800px) {
+  section {
+    display: flex;
+  }
+
+  section > article {
+    width: 50%;
+  }
+}
