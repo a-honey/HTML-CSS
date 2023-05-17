@@ -91,7 +91,6 @@ header .icons .fa-search {
   justify-content: space-between;
   padding: calc(var(--padding) / 4) calc(var(--padding) * 3)
     calc(var(--padding) / 2);
-  border-bottom: solid 1px --grey-light-color;
 }
 
 .info .infoIcons > button > .fas {
@@ -102,22 +101,24 @@ header .icons .fa-search {
 }
 
 .user {
-  height: 80px;
   display: flex;
-  padding: var(--padding);
   justify-content: space-between;
+  padding: calc(var(--padding) / 4);
+  border-top: solid 1px var(--grey-light-color);
+  border-bottom: solid 1px var(--grey-light-color);
 }
 
 .user .user-wrapper {
   display: flex;
   align-items: center;
+  padding: calc(var(--padding) / 4) var(--padding);
 }
 .user .user-wrapper > img {
   height: 50px;
   border-radius: 50%;
 }
 .user .user-wrapper > .userInfo {
-  padding: var(--padding);
+  padding: calc(var(--padding) / 4) var(--padding);
 }
 
 .user .user-wrapper .userName {
@@ -129,8 +130,59 @@ header .icons .fa-search {
   color: var(--grey-dark-color);
 }
 
+.user .subscribe {
+  padding: calc(var(--padding) / 4) var(--padding);
+}
+
 .user .subscribe > span {
   border: solid 2px var(--grey-dark-color);
   padding: calc(var(--padding) / 4) var(--padding);
   border-radius: 5px;
+}
+
+/* Items */
+
+.item {
+  display: flex;
+  padding: calc(var(--padding) / 2) var(--padding);
+  justify-content: space-between;
+}
+
+.item .itemInfo-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.item .itemInfo-wrapper img {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+
+.item button {
+  position: relative;
+  top: -50px;
+  margin-right: 30px;
+}
+
+.item .itemInfo-wrapper .itemInfo {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding);
+}
+
+.item .itemInfo-wrapper .itemInfo .itemTitle {
+  font-size: var(--font-large);
+  padding: calc(var(--padding) / 4);
+}
+
+.item .itemInfo-wrapper .itemInfo .itemUser {
+  font-size: var(--font-medium);
+  padding: calc(var(--padding) / 4);
+}
+
+.item .itemInfo-wrapper .itemInfo .itemView {
+  font-size: var(--font-small);
+  color: var(--grey-dark-color);
+  padding: calc(var(--padding) / 4);
 }
