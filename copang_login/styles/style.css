@@ -41,8 +41,10 @@ main #loginFrm fieldset ul .error {
   display: none;
 }
 main #loginFrm fieldset ul .id_error {
+  border: 0;
 }
 main #loginFrm fieldset ul .pw_error {
+  border: 0;
 }
 main #loginFrm fieldset ul li span {
 }
