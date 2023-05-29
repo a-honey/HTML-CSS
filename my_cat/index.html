@@ -12,31 +12,35 @@
     <header>
       <div class="head">
         <h1 class="logo">THE CAT</h1>
-        <div>home</div>
+        <div class="wrapper">
+          <button id="home"><a href="index.html">home</a></button>
+          <button id="menu-icon">&#9776;</button>
+        </div>
       </div>
       <div class="main-img">
-        <img src="images/hom.png" />
+        <img src="images/hom.png" alt="승냥이사진" />
       </div>
       <div class="title">
         <h1>My <span class="little">Little</span> Cat</h1>
         <div class="sub-title">나는 승냥이다옹</div>
       </div>
-      <nav>
-        <li class="strong">Profile</li>
-        <li class="weak">Personality</li>
-        <li class="strong">Likes</li>
-        <li class="weak">Skills</li>
-        <li class="strong">Photos</li>
+      <nav id="nav" class="clicked">
+        <ul>
+          <li id="profile" class="strong">Profile</li>
+          <li id="personality" class="weak">Personality</li>
+          <li id="likes" class="strong">Likes</li>
+          <li id="skills" class="weak">Skills</li>
+          <li id="photos" class="strong">Photos</li>
+        </ul>
       </nav>
     </header>
     <main>
-      <article id="profile">
-        <!-- <div>프로필</div> -->
-      </article>
+      <article id="content"></article>
     </main>
     <footer>
       <p>Author by AHoney</p>
-      <p>Copyright ⓒ 2016 - 2022 elice. All rights reserved.</p>
+      <p>Copyright ⓒ 2023 ahoney. All rights reserved.</p>
     </footer>
+    <script src="script/script.js"></script>
   </body>
 </html>
