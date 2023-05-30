@@ -1,19 +1,39 @@
-## blog
+## **MY_CAT**
 
-<img src='show/blog1.jpeg' width="70%" height="50%">
-<img src='show/blog.png' width="35%" height="50%">
-<img src='show/login.jpeg' width="35%" height="70%">
+<div align="center">
+  <img src="show/my_cat.main.jpeg" width="100%">
+  <img src="show/my_cat.photos.jpeg" width="100%">
+  <img src="show/my_cat.mobile.jpg" width="50%">
+</div>
 
-## copang_login
+<div align="right">
+  <a href="https://blog.naver.com/5128233/223114756735">동영상으로 보기</a>
+</div>
 
-<p><img src='show/copang_login1.png'width="70%" height="50%" title="이미지 조절"></p>
-<p><img src='show/copang_login2.png'width="70%" height="50%" title="이미지 조절"></p>
+## **BLOG**
 
-## portfolio
+<div align="center">
+  <img src="show/blog1.jpeg" width="100%">
+  <img src="show/blog.png" width="49%">
+  <img src="show/login.jpeg" width="49%">
+</div>
 
-<p><img src='show/portfolio.jpeg'width="70%" height="50%" title="이미지 조절"></p>
+## **COPANG_LOGIN**
 
-## youtube
+<div align="center">
+  <img src="show/copang_login1.png" width="49%">
+  <img src="show/copang_login2.png" width="49%">
+</div>
 
-<p><img src='show/youtube1.png'width="70%" height="50%" title="이미지 조절"></p>
-<p><img src='show/youtube2.jpeg'width="35%" height="50%" title="이미지 조절"></p>
+## **PORTFOLIO**
+
+<div align="center">
+  <img src="show/portfolio.jpeg" width="100%">
+</div>
+
+## **YOUTUBE**
+
+<div align="center">
+  <img src="show/youtube1.png" width="69%">
+  <img src="show/youtube2.jpeg" width="30%">
+</div>
