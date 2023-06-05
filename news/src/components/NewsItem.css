@@ -1,0 +1,37 @@
+.NewsItem {
+  display: flex;
+  margin: 0px auto;
+  width: 1000px;
+  height: 400px;
+  padding: 20px;
+}
+
+.News {
+  padding-left: 30px;
+}
+.News-img {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.News-title {
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.News-description {
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.News-link {
+  display: inline-block;
+  font-weight: 600;
+  color: rgb(24, 100, 40);
+  text-decoration: none;
+  text-align: right;
+}

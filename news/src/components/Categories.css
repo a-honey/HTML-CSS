@@ -1,0 +1,28 @@
+.categories {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 20px;
+  width: 100%;
+  background-color: rgb(177, 252, 196);
+  position: sticky;
+  top: 0px;
+}
+
+.c {
+  width: 70%;
+  font-size: 1.125rem;
+  font-weight: 550;
+  cursor: pointer;
+  white-space: pre;
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+
+.active {
+  font-size: 1.2rem;
+  font-weight: 650;
+  color: rgb(27, 95, 64);
+  border-bottom: 2px solid rgb(27, 95, 64);
+}

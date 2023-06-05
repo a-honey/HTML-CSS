@@ -1,0 +1,54 @@
+/* <div className="header">
+        <h1>The <span>NEW</span>S</h1>
+      </div>
+      <Categories />
+      <NewsItemList style={{ marginTop: "30px" }} category={category} /> */
+* {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+}
+.header {
+  width: 100%;
+  height: 500px;
+  background-color: rgb(10, 119, 0);
+  position: relative;
+}
+
+@keyframes slide {
+  0% {
+    left: 0;
+  }
+  60% {
+    left: 70%;
+  }
+  80% {
+    left: 60%;
+  }
+}
+
+.header .moving h1 {
+  font-size: 200px;
+  bottom: 40px;
+  right: 50px;
+  position: absolute;
+  animation: slide 1s ease-in-out;
+  animation-iteration-count: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header .moving h1 span {
+  color: white;
+  animation: slide 1s ease-in-out;
+  animation-iteration-count: 1;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.header .moving h1 span:hover {
+  display: inline-block;
+  bottom: 100px;
+}
