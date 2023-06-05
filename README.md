@@ -1,6 +1,13 @@
 ## **MY_CAT**
 
 <div align="center">
+  <img src="show/news.jpeg" width="100%">
+</div>
+<div style="text-align: right; font-size: 18px">with react</div>
+
+## **MY_CAT**
+
+<div align="center">
   <img src="show/my_cat.main.jpeg" width="100%">
   <img src="show/my_cat.photos.jpeg" width="100%">
   <img src="show/my_cat.mobile.jpg" width="50%">
