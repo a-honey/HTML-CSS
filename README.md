@@ -4,6 +4,9 @@
   <img src="show/news.jpeg" width="100%">
 </div>
 <div style="text-align: right; font-size: 18px">with react</div>
+<div style="text-align: right;">
+    <a href="https://blog.naver.com/5128233/223121207741">동영상으로 보기</a>
+</div>
 
 ## **MY_CAT**
 
