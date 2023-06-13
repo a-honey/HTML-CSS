@@ -8,7 +8,7 @@ const NewsPage = () => {
   const category = params.category || "all";
 
   return (
-    <div>
+    <div className="wrapper">
       <div className="header">
         <div className="moving">
           <h1>

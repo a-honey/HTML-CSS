@@ -1,4 +1,4 @@
-## **MY_CAT**
+## **NEWS**
 
 <div align="center">
   <img src="show/news.jpeg" width="100%">
