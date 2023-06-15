@@ -2,23 +2,15 @@ import TodoListItem from './TodoListItem';
 import './TodoList.css';
 import { useCallback } from 'react';
 import { List } from 'react-virtualized';
+import { useSelector } from 'react-redux';
 
-const TodoList = ({ todos, onRemove, onToggle }) => {
-  const rowRenderer = useCallback(
-    ({ index, key, style }) => {
-      const todo = todos[index];
-      return (
-        <TodoListItem
-          todo={todo}
-          key={key}
-          onRemove={onRemove}
-          onToggle={onToggle}
-          style={style}
-        />
-      );
-    },
-    [onRemove, onToggle, todos]
-  );
+const TodoList = () => {
+  const todos = useSelector((state) => state.todo);
+
+  const rowRenderer = ({ index, key, style }) => {
+    const todo = todos[index];
+    return <TodoListItem todo={todo} key={key} style={style} />;
+  };
 
   return (
     <List

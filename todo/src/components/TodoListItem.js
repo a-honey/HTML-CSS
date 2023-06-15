@@ -4,9 +4,21 @@ import {
   MdRemoveCircleOutline,
 } from 'react-icons/md';
 import './TodoListItem.css';
+import { useDispatch } from 'react-redux';
+import { deleteTodo, toggleTodo } from '../features/todoSlice';
 
-const TodoListItem = ({ todo, onRemove, onToggle, style }) => {
+const TodoListItem = ({ todo, style }) => {
   const { id, text, checked } = todo;
+
+  const dispatch = useDispatch(deleteTodo);
+
+  const onRemove = (id) => {
+    dispatch(deleteTodo(id));
+  };
+
+  const onToggle = (id) => {
+    dispatch(toggleTodo(id));
+  };
 
   return (
     <div className="TodoListItem-virtualized" style={style}>
