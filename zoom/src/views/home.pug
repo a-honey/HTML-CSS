@@ -9,9 +9,21 @@ html(lang="en")
     header
       h1 Zoom Clone
     main
-      form
-        ul 
-        input(type="text", placeholder="write a msg", required)
-        button Send
+      div#nickName
+        form
+          input(type="text", placeholder="nickName", required)
+          button OK
+      div#welcome
+        form
+          ul 
+          input(type="text", placeholder="room name", required)
+          button Enter Room
+      div#room 
+        form
+          h3
+          ul
+          input(type="text", placeholder="Enter msg...", required)
+          button Send
 
+    script(src="/socket.io/socket.io.js")
     script(src="/public/js/app.js")
