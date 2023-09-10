@@ -1,3 +1,9 @@
+## **CHAT**
+
+<div align="center">
+  <img src="show/chat.png" width="100%">
+</div>
+
 ## **NEWS**
 
 <div align="center">
