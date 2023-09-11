@@ -16,6 +16,7 @@ let cameraOff = false;
 let roomName;
 /** @type {RTCPeerConnection} */
 let myPeerConnection;  // WebRTC 피어 커넥션
+let myDataChannel;
 
 // 카메라 목록을 가져오는 함수
 const getCameras = async () => {
@@ -127,7 +128,9 @@ welcomeForm.addEventListener("submit", handleWelcomeSubmit);
 
 // 현재 방에 다른 유저가 들어왔을때 실행됨
 socket.on("welcome", async () => {
-  console.log("다른 유저가 들어옴")
+  myDataChannel = myPeerConnection.createDataChannel("chat");
+  myDataChannel.addEventListener("message", console.log)
+  console.log("다른 유저가 들어옴, data channel 생성");
   // WebRTC 피어 간의 통신을 설정하고 제어하는데 사용되는 SDF 형식의 메시지(미디어 스트림 및 연결에 대한 정보를 포함)을 생성 및 설정
   const offer = await myPeerConnection.createOffer();
   console.log("나의 offer 생성", offer)
@@ -138,6 +141,10 @@ socket.on("welcome", async () => {
 
 // 다른 유저가 들어와서 내 offer를 다른 유저에게 제공한 후, 다른 사람의 offer를 받으면서 실행
 socket.on("offer", async (offer) => {
+  myPeerConnection.addEventListener("datachannel", (e) => {
+    myDataChannel = e.channel;
+    myDataChannel.addEventListener("message", console.log);
+  })
   console.log("받은 offer", offer)
   // 원격 미디어 스트림(다른 유저의 offer)을 설정
   myPeerConnection.setRemoteDescription(offer);
