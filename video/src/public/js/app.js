@@ -14,6 +14,7 @@ let myStream;  // 유저의 미디어 스트림
 let muted = false;
 let cameraOff = false;
 let roomName;
+/** @type {RTCPeerConnection} */
 let myPeerConnection;  // WebRTC 피어 커넥션
 
 // 카메라 목록을 가져오는 함수
